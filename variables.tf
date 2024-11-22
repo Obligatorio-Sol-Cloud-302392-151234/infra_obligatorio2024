@@ -19,3 +19,7 @@ variable "private" {
   description = "Variable de Subnet privada"
 }
 
+variable "instance_type" {
+  type        = string
+  description = "Variable tipo de instancia"
+}
