@@ -41,14 +41,16 @@ resource "aws_internet_gateway" "internet_gw" {
 }
 
 resource "aws_eip" "public_ip" {
-  vpc = true
+  domain = "vpc"
+
+  depends_on = [aws_internet_gateway.internet_gw]
 }
 
 resource "aws_nat_gateway" "nat_gw" {
   allocation_id = aws_eip.public_ip.id
-  subnet_id     = var.public[0]
+  subnet_id     = aws_subnet.public_subnet[0].id
 
-  depends_on = [aws_internet_gateway.gw]
+  depends_on = [aws_internet_gateway.internet_gw]
 
   tags = {
     Name = "nat_gw"
@@ -83,13 +85,13 @@ resource "aws_route_table" "private_rt" {
 
 resource "aws_route_table_association" "public_subnet_as" {
   count          = length(var.public)
-  subnet_id      = element(aws_subnet.public_subnets[*].id, count.index)
+  subnet_id      = element(aws_subnet.public_subnet[*].id, count.index)
   route_table_id = aws_route_table.public_rt.id
 }
 
 resource "aws_route_table_association" "private_subnet_as" {
   count          = length(var.private)
-  subnet_id      = element(aws_subnet.private_subnets[*].id, count.index)
+  subnet_id      = element(aws_subnet.private_subnet[*].id, count.index)
   route_table_id = aws_route_table.private_rt.id
 }
 
