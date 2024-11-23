@@ -11,10 +11,11 @@ module "eks" {
   cluster_endpoint_public_access = true
 
   vpc_id                   = aws_vpc.prod_app_vpc.id
-  subnet_ids               = element(aws_subnet.private_subnet[*].id, count.index)
-  control_plane_subnet_ids = element(aws_subnet.private_subnet[*].id, count.index)
+  subnet_ids               = aws_subnet.private_subnet[*].id
+  control_plane_subnet_ids = aws_subnet.private_subnet[*].id
   iam_role_arn             = data.aws_iam_role.labrole-arn.arn
   create_iam_role          = false
+  enable_irsa              = false
 
   # EKS Managed Node Group(s)
   eks_managed_node_group_defaults = {
@@ -28,12 +29,13 @@ module "eks" {
       max_size     = 2
       desired_size = 1
 
-      instance_types           = var.instance_type
+      instance_types           = [var.instance_type]
       capacity_type            = "ON_DEMAND"
       iam_role_arn             = data.aws_iam_role.labrole-arn.arn
       iam_instance_profile_arn = data.aws_iam_role.labrole-arn.arn
       create_iam_role          = false
       create_role              = false
+
     }
   }
 }
