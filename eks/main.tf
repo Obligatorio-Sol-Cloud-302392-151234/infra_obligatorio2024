@@ -10,9 +10,9 @@ module "eks" {
 
   cluster_endpoint_public_access = true
 
-  vpc_id                   = aws_vpc.prod_app_vpc.id
-  subnet_ids               = aws_subnet.private_subnet[*].id
-  control_plane_subnet_ids = aws_subnet.private_subnet[*].id
+  vpc_id                   = var.vpc
+  subnet_ids               = var.subnets
+  control_plane_subnet_ids = var.subnets
   iam_role_arn             = data.aws_iam_role.labrole-arn.arn
   create_iam_role          = false
   enable_irsa              = false

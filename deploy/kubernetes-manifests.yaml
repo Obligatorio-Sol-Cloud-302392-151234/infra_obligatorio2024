@@ -16,7 +16,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: ${var.img_adservice}
+        image: 695788816269.dkr.ecr.us-east-1.amazonaws.com/app_oblgatorio/adservice
         ports:
         - containerPort: 9555
         env:
