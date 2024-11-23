@@ -15,7 +15,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: <IMAGE:TAG>
+          image: gs151234/obligatorio2024:checkoutservice
           ports:
           - containerPort: 5050
           readinessProbe:
