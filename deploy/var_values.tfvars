@@ -1,0 +1,1 @@
+img_adservice = "imagen publica adservice"
