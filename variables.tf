@@ -1,3 +1,8 @@
+variable "region" {
+  type = string
+  description = "Variable de Región" 
+}
+
 variable "network_cidr" {
   type        = string
   description = "Variable para CIDR"
@@ -22,4 +27,14 @@ variable "private" {
 variable "instance_type" {
   type        = string
   description = "Variable tipo de instancia"
+}
+
+variable "profile" {
+  type = string
+  description = "Variable de Perfil" 
+}
+
+variable "app_eks_cluster" {
+  type = string
+  description = "Variable de Cluster"  
 }
