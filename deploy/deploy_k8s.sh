@@ -1,5 +1,5 @@
 #!/bin/bash
-
+aws eks update-kubeconfig --region $1 --name $2 --alias $2 --profile $3
 # Directorio base
 REPO_DIR="./microservicios"
  
