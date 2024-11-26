@@ -15,3 +15,6 @@ terraform.tfstate
 .terraform.tfstate.lock.info
 .terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/windows_amd64/LICENSE.txt
 .terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/windows_amd64/terraform-provider-null_v3.2.3_x5.exe
+Recordatorio-para-mañana.txt
+.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.34.0/windows_amd64/LICENSE.txt
+.terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.34.0/windows_amd64/terraform-provider-kubernetes_v2.34.0_x5.exe
