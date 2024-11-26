@@ -38,4 +38,22 @@ module "eks" {
 
     }
   }
+node_security_group_additional_rules = {
+  ingress_rule = {
+    description = "Allow all inbound traffic"
+    from_port = 0
+    to_port = 0
+    protocol = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+    type = "ingress"
+  }
+  egress_rule = {
+   description = "Allow all outbound traffic"
+   from_port = 0
+   to_port = 0
+   protocol = "-1"
+   cidr_blocks = ["0.0.0.0/0"] 
+   type = "egress"
+  }
+}
 }

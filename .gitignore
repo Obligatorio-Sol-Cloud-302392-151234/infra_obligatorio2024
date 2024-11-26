@@ -18,3 +18,8 @@ terraform.tfstate
 
 .terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.34.0/windows_amd64/LICENSE.txt
 .terraform/providers/registry.terraform.io/hashicorp/kubernetes/2.34.0/windows_amd64/terraform-provider-kubernetes_v2.34.0_x5.exe
+.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.0.2/windows_amd64/LICENSE
+.terraform/providers/registry.terraform.io/hashicorp/template/2.2.0/windows_amd64/terraform-provider-template_v2.2.0_x4.exe
+.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.0.2/windows_amd64/CHANGELOG.md
+.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.0.2/windows_amd64/README.md
+.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.0.2/windows_amd64/terraform-provider-docker_v3.0.2.exe

@@ -16,7 +16,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gs151234/obligatorio2024:adservice
+        image: ${docker_img}
         ports:
         - containerPort: 9555
         env:
