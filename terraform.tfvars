@@ -10,3 +10,5 @@ app_eks_cluster = "app_eks_cluster"
 
 adservice_img = "gs151234/obligatorio2024:adservice"
 manifest_adservice = "microservicios/src/adservice/deployment/kubernetes-manifests.yaml"
+
+repository_list = ["adservice", "checkoutservice", "currencyservice", "emailservice", "frontend", "loadgenerator", "paymentservice", "productcatalogservice", "recommendationservice", "shippingservice"]

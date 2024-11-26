@@ -43,3 +43,5 @@ variable "app_eks_cluster" {
 variable "adservice_img" {}
 
 variable "manifest_adservice" {}
+
+variable "repository_list" {}
