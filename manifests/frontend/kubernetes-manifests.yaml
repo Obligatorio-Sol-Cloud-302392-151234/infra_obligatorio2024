@@ -17,7 +17,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: <IMAGE:TAG>
+          image: {{docker_img}}
           ports:
           - containerPort: 8080
           readinessProbe:

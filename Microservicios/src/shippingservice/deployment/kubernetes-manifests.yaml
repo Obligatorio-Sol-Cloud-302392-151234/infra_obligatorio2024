@@ -15,7 +15,7 @@ spec:
       serviceAccountName: default
       containers:
       - name: server
-        image: gs151234/obligatorio2024:shippingservice
+        image: <IMAGE:TAG>
         ports:
         - containerPort: 50051
         env:

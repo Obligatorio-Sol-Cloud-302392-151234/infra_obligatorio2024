@@ -13,5 +13,61 @@ variable "profile" {
   description = "Variable de Perfil"
 }
 
-variable "adservice_img" {}
-variable "manifest_adservice" {}
+variable "repository_list" {
+    description = "Variable lista de repositorios"
+    type = list  
+}
+
+
+
+#adservice
+
+variable "manifest_adservice" { 
+  default = "."
+  }
+#checkoutservice
+
+variable "manifest_checkoutservice" {
+   default = "."
+}
+#currencyservice_
+
+variable "manifest_currencyservice" {
+   default = "."
+}
+#emailservice
+
+variable "manifest_emailservice" {
+   default = "."
+}
+#frontend
+
+variable "manifest_frontend" {
+   default = "."
+}
+#loadgenerator
+
+variable "manifest_loadgenerator" {
+   default = "."
+}
+#paymentservice
+
+variable "manifest_paymentservice" {
+   default = "."
+}
+#productcatalogservice
+
+variable "manifest_productcatalogservice" {
+   default = "."
+}
+#recommendationservice
+
+variable "manifest_recommendationservice" {
+   default = "."
+}
+#shippingservice
+
+variable "manifest_shippingservice" {
+   default = "."
+}
+

@@ -11,19 +11,12 @@ spec:
     metadata:
       labels:
         app: cartservice
-    spec:  # Aquí comienza la configuración correcta del pod
-      affinity:
-        podAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-          - labelSelector:
-              matchLabels:
-                app: redis-cart  # Asegura que cartservice se ejecute en el mismo nodo que redis-cart
-            topologyKey: kubernetes.io/hostname  # Utiliza el nombre del nodo como clave para la afinidad
+    spec:
       serviceAccountName: default
-      terminationGracePeriodSeconds: 5 
+      terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gs151234/obligatorio2024:cartservice
+        image: <IMAGE:TAG>
         ports:
         - containerPort: 7070
         env:
@@ -37,12 +30,11 @@ spec:
             cpu: 300m
             memory: 128Mi
         readinessProbe:
-          initialDelaySeconds: 30
-          periodSeconds: 10
+          initialDelaySeconds: 15
           exec:
             command: ["/bin/grpc_health_probe", "-addr=:7070", "-rpc-timeout=5s"]
         livenessProbe:
-          initialDelaySeconds: 30
+          initialDelaySeconds: 15
           periodSeconds: 10
           exec:
             command: ["/bin/grpc_health_probe", "-addr=:7070", "-rpc-timeout=5s"]

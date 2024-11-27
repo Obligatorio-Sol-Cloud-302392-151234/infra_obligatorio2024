@@ -16,7 +16,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gs151234/obligatorio2024:currencyservice
+        image: <IMAGE:TAG>
         ports:
         - name: grpc
           containerPort: 7000

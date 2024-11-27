@@ -16,7 +16,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gs151234/obligatorio2024:productcatalogservice
+        image: <IMAGE:TAG>
         ports:
         - containerPort: 3550
         env:

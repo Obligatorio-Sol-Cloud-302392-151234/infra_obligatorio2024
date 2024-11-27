@@ -18,12 +18,12 @@ resource "docker_registry_image" "repository_push" {
 }
 
 
-resource "null_resource" "remove_docker_image" {
-  for_each = toset(var.repository_list)
+#resource "null_resource" "remove_docker_image" {
+#  for_each = toset(var.repository_list)
   
-  depends_on = [docker_registry_image.repository_push]
+#  depends_on = [docker_registry_image.repository_push]
   
-  provisioner "local-exec" {
-    command  = "docker rmi ${docker_image.repository[each.key].name}"
-  }
-}
+#  provisioner "local-exec" {
+#    command  = "docker rmi ${docker_image.repository[each.key].name}"
+#  }
+#}
