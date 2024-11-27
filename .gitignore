@@ -29,3 +29,8 @@ terraform.tfstate
 .terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/windows_amd64/LICENSE
 .terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/windows_amd64/README.md
 .terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/windows_amd64/terraform-provider-docker_v2.15.0.exe
+.terraform/providers/registry.terraform.io/hashicorp/local/2.5.2/windows_amd64/LICENSE.txt
+.terraform/providers/registry.terraform.io/hashicorp/local/2.5.2/windows_amd64/terraform-provider-local_v2.5.2_x5.exe
+Microservicios/src/adservice/Dockerfile
+Microservicios/src/adservice/Dockerfile
+Microservicios/src/adservice/gradlew.bat

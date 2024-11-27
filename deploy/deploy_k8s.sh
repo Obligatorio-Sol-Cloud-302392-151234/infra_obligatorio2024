@@ -11,7 +11,7 @@ find "$REPO_DIR" -type f -name "*.yaml" | while read -r yaml_file; do
   # Ejecutar el archivo YAML usando kubectl
   kubectl apply -f "$yaml_file"
   
-#  sleep 10
+  sleep 10
 
    Comprobar si el comando fue exitoso
   if [ $? -eq 0 ]; then
