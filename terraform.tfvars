@@ -6,4 +6,6 @@ private         = ["10.0.2.0/24", "10.0.3.0/24"]
 instance_type   = "t3.medium"
 profile         = "default"
 app_eks_cluster = "app_eks_cluster"
-repository_list = ["adservice", "checkoutservice", "currencyservice", "emailservice", "frontend", "loadgenerator", "paymentservice", "productcatalogservice", "recommendationservice", "shippingservice"]
+repository_list = ["adservice", "cartservice", "checkoutservice", "currencyservice", "emailservice", "frontend", "loadgenerator", "paymentservice", "productcatalogservice", "recommendationservice", "shippingservice"]
+
+

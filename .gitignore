@@ -34,3 +34,16 @@ terraform.tfstate
 Microservicios/src/adservice/Dockerfile
 Microservicios/src/adservice/Dockerfile
 Microservicios/src/adservice/gradlew.bat
+generated/adservice/kubernetes-manifests.yaml
+generated/cartservice/kubernetes-manifests.yaml
+generated/checkoutservice/kubernetes-manifests.yaml
+generated/currencyservice/kubernetes-manifests.yaml
+generated/emailservice/kubernetes-manifests.yaml
+generated/frontend/kubernetes-manifests.yaml
+generated/loadgenerator/kubernetes-manifests.yaml
+generated/paymentservice/kubernetes-manifests.yaml
+generated/productcatalogservice/kubernetes-manifests.yaml
+generated/recommendationservice/kubernetes-manifests.yaml
+generated/redis/kubernetes-manifests.yaml
+generated/shippingservice/kubernetes-manifests.yaml
+manifests/cartservice/kubernetes-manifests.yaml
