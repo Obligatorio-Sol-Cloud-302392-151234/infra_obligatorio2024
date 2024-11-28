@@ -1,7 +1,10 @@
 resource "local_file" "modified_files" {
-  for_each = fileset("manifests", "**/*.yaml")  # Obtiene todos los archivos .yaml de la carpeta 'manifests' y subcarpetas
+  
+  # Obtiene todos los archivos .yaml de la carpeta 'manifests' y subcarpetas
+  for_each = fileset("manifests", "**/*.yaml")  
 
-  filename = "generated/${each.value}"  # El archivo se guarda en 'generated', respetando la estructura original
+  # El archivo se guarda en 'generated', respetando la estructura original
+  filename = "generated/${each.value}"  
 
   # Primero, lee el contenido del archivo original
   content = can(regex("{{docker_img}}", file("manifests/${each.value}"))) ? replace(
