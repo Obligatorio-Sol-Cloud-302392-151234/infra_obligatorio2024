@@ -27,10 +27,14 @@
 
 La startup “e-shop Services” ha decidido expandir sus operaciones por todo el mundo,
 haciendo llegar sus servicios de e-commerce y retail, a todo el continente de América.
+La competencia actualmente está posicionada en la región a la cual se quiere expandir, pero
+los inversionistas están presionando para que “e-shop Services” expanda su marca ya que
+de esto depende el seguir invirtiendo.
 
-Para ello se requiere modernizar y desplegar la arquitectura e
-infraestructura de su aplicación. Para
+Se ha contratado a la consultora BitBeat para modernizar y desplegar la arquitectura e
+infraestructura de su aplicación que actualmente corre en un datacenter on-premise. Para
 esto, se requiere el despliegue de las aplicaciones, en ambientes basados en containers
+(Docker, Podman, Kubernetes, etc)
 
 ---
 
