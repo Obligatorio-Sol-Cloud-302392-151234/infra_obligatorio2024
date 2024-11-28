@@ -1,6 +1,28 @@
 # Obligatorio Soluciones Cloud Diego Vazquez (302392) y Giovanni Storti (151234)
 ---
 
+## Índice
+
+- [Consigna](#consigna)
+- [Requisitos previos](#requisitos-previos)
+- [Servicios de AWS utilizados](#servicios-de-aws-utilizados)
+- [Diagrama de arquitectura y despliegue](#diagrama-de-arquitectura-y-despliegue)
+- [Estructura de Terraform](#estructura-de-terraform)
+- [Variables de entrada](#variables-de-entrada)
+- [Configuración de docker según SO](#configuración-de-docker-según-so)
+  - [Para Windows](#para-windows)
+  - [Para Linux/macOS](#para-linuxmacos)
+- [Agregar nuevos microservicios](#agregar-nuevos-microservicios)
+- [Modo de uso del repositorio](#modo-de-uso-del-repositorio)
+- [Despliegue de la Infraestructura y Aplicaciones](#despliegue-de-la-infraestructura-y-aplicaciones)
+- [Capturas de ejecución en Terraform](#capturas-de-ejecución-en-terraform)
+- [Evidencia de despliegue](#evidencia-de-despliegue)
+- [Destrucción de infraestructura y aplicaciones](#destrucción-de-infraestructura-y-aplicaciones)
+- [Fallas a la hora de utilizar el destroy](#fallas-a-la-hora-de-utilizar-el-destroy)
+
+
+---
+
 ## Consigna 
 
 La startup “e-shop Services” ha decidido expandir sus operaciones por todo el mundo,
@@ -12,7 +34,7 @@ esto, se requiere el despliegue de las aplicaciones, en ambientes basados en con
 
 ---
 
-## Requisitos previos 📋
+## Requisitos previos
 
 - **CLI AWS**
 - **Docker**
@@ -165,7 +187,7 @@ Estos son los valores parametrizables que se pueden ajustar en el archivo `terra
 
 
 ----
-### Configuración de Docker
+### Configuración de Docker según SO
 Para la creación de las imágenes en Docker, es necesario ajustar en `terraform.tfvars` la configuración del socket del daemon de Docker según el sistema operativo:
 
 #### Para Windows:
@@ -213,7 +235,7 @@ repository_list = [
 ```
 ----
 
-# Modo de uso del repositorio🔧
+# Modo de uso del repositorio
 
 ## Despliegue de la Infraestructura y Aplicaciones
 
