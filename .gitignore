@@ -11,3 +11,4 @@
 *.tfstate
 *.tfstate.*
 *.deploy_k8s.sh.swp
+/.terraform.*
