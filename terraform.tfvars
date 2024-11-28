@@ -8,4 +8,8 @@ profile         = "default"
 app_eks_cluster = "app_eks_cluster"
 repository_list = ["adservice", "cartservice", "checkoutservice", "currencyservice", "emailservice", "frontend", "loadgenerator", "paymentservice", "productcatalogservice", "recommendationservice", "shippingservice"]
 
+host_docker = "npipe:////./pipe/docker_engine" #Para equipos con windows
+
+#host_docker ="unix:///var/run/docker.sock" #Para equipos con Linux/macOS
+ 
 

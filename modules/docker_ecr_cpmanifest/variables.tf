@@ -5,11 +5,12 @@ variable "repository_list" {
     type = list  
 }
 
+variable "host_docker" {} 
 
 variable "dockerfile_paths" {
   default = {
     "adservice"      = "microservicios/src/adservice"
-    "cartservice"    = "microservicios/src/cartservice/src" # Subcarpeta específica
+    "cartservice"    = "microservicios/src/cartservice/src" 
     "checkoutservice" = "microservicios/src/checkoutservice"
     "currencyservice" = "microservicios/src/currencyservice"
     "emailservice"   = "microservicios/src/emailservice"

@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "docker" {
-    host = "npipe:////./pipe/docker_engine"
+    host = var.host_docker
     registry_auth {
       address = local.aws_ecr_url
       username = data.aws_ecr_authorization_token.token.user_name

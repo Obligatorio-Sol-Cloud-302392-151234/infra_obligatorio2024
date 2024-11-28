@@ -1,6 +1,6 @@
 module "deploy" {
 
-  source          = "./deploy"
+  source          = "modules/deployment"
   region          = var.region
   profile         = var.profile
   app_eks_cluster = var.app_eks_cluster

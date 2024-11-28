@@ -24,21 +24,9 @@ variable "private" {
   description = "Variable de Subnet privada"
 }
 
-variable "instance_type" {
-  type        = string
-  description = "Variable tipo de instancia"
-}
 
-variable "profile" {
-  type        = string
-  description = "Variable de Perfil"
-}
 
-variable "app_eks_cluster" {
-  type        = string
-  description = "Variable de Cluster"
-}
 
-variable "repository_list" {}
 
-variable "host_docker" {}
+
+
