@@ -41,7 +41,7 @@ esto, se requiere el despliegue de las aplicaciones, en ambientes basados en con
 ---
 ## Diagrama de arquitectura y despliegue
 
-
+[documentation_files/obligatorioISC.png](https://github.com/Obligatorio-Sol-Cloud-302392-151234/infra_obligatorio2024/blob/fb674b9ce20a2f72832d9b952d30918e23268b7b/documentation_files/obligatorioISC.png)
 
 
 
