@@ -25,9 +25,9 @@ module "eks" {
 
   eks_managed_node_groups = {
     workers = {
-      min_size     = 2
-      max_size     = 3
-      desired_size = 2
+      min_size     = var.min
+      max_size     = var.max
+      desired_size = var.desired
 
       instance_types           = [var.instance_type]
       capacity_type            = "ON_DEMAND"

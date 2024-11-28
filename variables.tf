@@ -42,3 +42,17 @@ variable "host_docker" {
   description = "Variable configuracion de host segun SO"
 }
 
+variable "min" {
+    description = "Variable minimo de nodos"
+    default = 1
+}
+
+variable "max" {
+    description = "Variable maximo de nodos"
+    default = 2
+}
+
+variable "desired" {
+    description = "Variable cantidad deseada de nodos"
+    default = 1
+}
