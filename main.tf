@@ -12,6 +12,9 @@ module "eks" {
   instance_type = var.instance_type
   vpc           = module.network.vpc_id
   private_sub   = module.network.private_subnets
+  min = var.min
+  max = var.max
+  desired = var.desired
 }
 
 module "docker_ecr_cpmanifest" {
