@@ -47,3 +47,4 @@ generated/recommendationservice/kubernetes-manifests.yaml
 generated/redis/kubernetes-manifests.yaml
 generated/shippingservice/kubernetes-manifests.yaml
 manifests/cartservice/kubernetes-manifests.yaml
+docker_ecr/replace_in_manifests.txt
