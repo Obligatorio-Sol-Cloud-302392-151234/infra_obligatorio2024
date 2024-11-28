@@ -1,10 +1,8 @@
 variable "region" {
-  type        = string
   description = "Variable de Región"
 }
 
 variable "network_cidr" {
-  type        = string
   description = "Variable para CIDR"
 }
 
@@ -25,20 +23,22 @@ variable "private" {
 }
 
 variable "instance_type" {
-  type        = string
   description = "Variable tipo de instancia"
 }
 
 variable "profile" {
-  type        = string
   description = "Variable de Perfil"
 }
 
 variable "app_eks_cluster" {
-  type        = string
   description = "Variable de Cluster"
 }
 
-variable "repository_list" {}
+variable "repository_list" {
+  description = "Variable lista de nombres de repositorios"
+}
 
-variable "host_docker" {}
+variable "host_docker" {
+  description = "Variable configuracion de host segun SO"
+}
+

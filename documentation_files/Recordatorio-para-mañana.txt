@@ -1,0 +1,3 @@
+https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file.html
+automatizar Dockerfile
+terraform docs

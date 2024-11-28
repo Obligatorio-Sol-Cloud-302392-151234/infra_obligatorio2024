@@ -1,10 +1,8 @@
 variable "region" {
-  type        = string
   description = "Variable de Región"
 }
 
 variable "network_cidr" {
-  type        = string
   description = "Variable para CIDR"
 }
 

@@ -11,8 +11,8 @@ module "eks" {
   cluster_endpoint_public_access = true
 
   vpc_id                   = var.vpc
-  subnet_ids               = var.subnets
-  control_plane_subnet_ids = var.subnets
+  subnet_ids               = var.private_sub
+  control_plane_subnet_ids = var.private_sub
   iam_role_arn             = data.aws_iam_role.labrole-arn.arn
   create_iam_role          = false
   enable_irsa              = false
