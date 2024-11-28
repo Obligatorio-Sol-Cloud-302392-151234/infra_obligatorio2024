@@ -56,14 +56,14 @@ esto, se requiere el despliegue de las aplicaciones, en ambientes basados en con
 - **Route Tables**
 - **Elastic IP**
 - **NAT Gateway**
-- **EKS**
+- **EKS** *(Gestiona los servicios que aquí se indican).*
   - EC2
   - Security Groups
   - ELB
   - Auto Scaling Group
 - **ECR**
 
-*(EKS gestiona los servicios que se detallan).*
+
 
 ---
 ## Diagrama de arquitectura y despliegue
