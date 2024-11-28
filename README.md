@@ -12,16 +12,41 @@ esto, se requiere el despliegue de las aplicaciones, en ambientes basados en con
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Pre-requisitos instalados 📋
+## Requisitos previos 📋
 
-AWS CLI
-Docker Desktop V2.15.0
-Terraform v1.9.8
-Bash (en caso de realziar la instalacion en windows)
-Git 2.47.0
-kubctl Kustomize Version: v5.4.2
+- **CLI AWS**
+- **Docker**
+- **Terraform** (utilizamos la v1.9.8)
+- **Git**
+- **kubectl** 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Servicios de AWS utilizados
+
+- **VPC**
+- **Subnets**
+- **Internet Gateway**
+- **Route Tables**
+- **Elastic IP**
+- **NAT Gateway**
+- **EKS**
+  - EC2
+  - Security Groups
+  - ELB
+  - Auto Scaling Group
+- **ECR**
+
+*(EKS gestiona los servicios que se detallan).*
+
+---
+## Diagrama de arquitectura y despliegue
+
+
+
+
+
+
+
 
 Modo de uso del repositorio🔧
 
