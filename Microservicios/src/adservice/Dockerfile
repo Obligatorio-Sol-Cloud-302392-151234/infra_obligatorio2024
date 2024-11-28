@@ -12,14 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM openjdk:8-slim as builder
+FROM openjdk:8-slim AS builder
 
 WORKDIR /app
 
 COPY ["build.gradle", "gradlew", "./"]
 COPY gradle gradle
 RUN chmod +x gradlew
-RUN ./gradlew downloadRepos
+RUN ./gradlew downloadRepos && sleep 5
 
 COPY . .
 RUN chmod +x gradlew
